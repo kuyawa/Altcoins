@@ -9,3 +9,158 @@ TODO:
 DONE:
 
 -
+
+
+
+----
+
+https://api.coinmarketcap.com/v1/ticker/?limit=100
+check every hour
+
+[  TOP 10  |  TOP 50  |  TOP 100  ]
+[	USD   |   BTC   |   VOL   |   MKT CAP  ][          TREND          ]
+#  BTC  Bitcoin  USD      BTC  VOL          Last Hour  24 hours  7 days
+1  BTC  Bitcoin  1279.17  1.0  322,102,000  -0.41%     0.98      6.02
+
+
+
+
+[
+    {
+        "id": "bitcoin",
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "rank": "1",
+        "price_usd": "1279.17",
+        "price_btc": "1.0",
+        "24h_volume_usd": "322102000.0",
+        "market_cap_usd": "20844730085.0",
+        "available_supply": "16295512.0",
+        "total_supply": "16295512.0",
+        "percent_change_1h": "-0.41",
+        "percent_change_24h": "0.98",
+        "percent_change_7d": "6.02",
+        "last_updated": "1493240956"
+    },
+    :
+    :
+]
+
+Coins  [ TOP 10  |  TOP 100 |   ALL   ]
+Index  [  USD  |  BTC  |  VOL  |  MKT  ]
+Change [ 1 hour  | 24 hours |  7 days  ]
+
+BTC   Bitcoin                    1316.7500
+ETH   Ethereum                     60.1594
+XRP   Ripple                        0.0334
+LTC   Litecoin                     14.5177
+DASH  Dash                         79.6984
+:
+
+    Update on 2017.04.25 08.35.55
+
+----
+
+BTC   Bitcoin                    1316.7500
+ETH   Ethereum                     60.1594
+XRP   Ripple                        0.0334
+LTC   Litecoin                     14.5177
+DASH  Dash                         79.6984
+ETC   Ethereum Classic              4.8966
+XEM   NEM                           0.0465
+XMR   Monero                       21.0338
+REP   Augur                        13.4543
+MAID  MaidSafeCoin                  0.2457
+GNT   Golem                         0.1236
+ZEC   Zcash                        77.0186
+DCR   Decred                       15.0361
+DOGE  Dogecoin                      0.0007
+PIVX  PIVX                          1.2419
+FCT   Factom                        7.0522
+STRAT Stratis                       0.6271
+LSK   Lisk                          0.5445
+USDT  Tether                        0.9241
+STEEM Steem                         0.2414
+WAVES Waves                         0.5510
+BCC   BitConnect                    8.9258
+DGD   DigixDAO                     25.7416
+GAME  GameCredits                   0.8264
+ICN   Iconomi                       0.5376
+ARDR  Ardor                         0.0434
+SNGLS SingularDTV                   0.0647
+XLM   Stellar Lumens                0.0039
+ROUND Round                         0.0407
+BTS   BitShares                     0.0132
+RLC   iExec RLC                     0.4393
+BCN   Bytecoin                      0.0002
+GBYTE Byteball                    183.7610
+PPC   Peercoin                      1.1652
+NXT   Nxt                           0.0267
+1ST   First Blood                   0.2990
+SYS   SysCoin                       0.0460
+SC    Siacoin                       0.0009
+SJCX  Storjcoin X                   0.4174
+EMC   Emercoin                      0.5231
+MLN   Melon                        32.8029
+LKK   Lykke                         0.1405
+NMC   Namecoin                      1.1617
+KMD   Komodo                        0.1649
+NXS   Nexus                         0.3335
+ARK   Ark                           0.1642
+XAUR  Xaurum                        0.1501
+XZC   ZCoin                         7.3715
+NLG   Gulden                        0.0409
+TRST  WeTrust                       0.1539
+CRB   Creditbit                     0.9981
+BCY   Bitcrystals                   0.2968
+AGRS  Agoras Tokens                 0.2842
+NAV   NAV Coin                      0.1945
+XCP   Counterparty                  4.0557
+ANS   AntShares                     0.1997
+BTCD  BitcoinDark                   7.6673
+BLK   BlackCoin                     0.1271
+UBQ   Ubiq                          0.2578
+CRW   Crown                         0.7001
+WINGS Wings                         0.1230
+AMP   Synereo                       0.1093
+BAY   BitBay                        0.0089
+DGB   DigiByte                      0.0010
+POT   PotCoin                       0.0378
+SWT   Swarm City                    1.3185
+EDG   Edgeless                      0.1034
+NXC   Nexium                        0.1137
+TIME  Chronobank                   10.6435
+B@    Bankcoin                      1.6913
+NVC   Novacoin                      4.1297
+RBY   Rubycoin                      0.2881
+EXP   Expanse                       0.9752
+ION   ION                           0.5148
+VSL   vSlice                        0.1973
+YBC   YbCoin                        2.1592
+IOC   I/O Coin                      0.3942
+MONA  MonaCoin                      0.1280
+BLOCK Blocknet                      1.5529
+POSW  PoSW Coin                     0.1354
+SKY   Skycoin                       1.0108
+MUE   MonetaryUnit                  0.0446
+ZCL   ZClassic                      4.2101
+LBC   LBRY Credits                  0.0786
+RADS  Radium                        1.4949
+GRC   GridCoin                      0.0123
+EDR   E-Dinar Coin                  0.0543
+VIA   Viacoin                       0.1964
+XPM   Primecoin                     0.2220
+SLR   SolarCoin                     0.1187
+BELA  BelaCoin                      0.1218
+BURST Burst                         0.0023
+CLAM  Clams                         1.7990
+GCR   Global Currency Reserve       0.0386
+VASH  VPNCoin                       0.0097
+OMNI  Omni                          6.8670
+SIB   SIBCoin                       0.2678
+XBC   Bitcoin Plus                 39.3870
+VTC   Vertcoin                      0.1089
+UNITY SuperNET                      4.3722
+
+
+END

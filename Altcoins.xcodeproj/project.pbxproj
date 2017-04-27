@@ -14,6 +14,8 @@
 		3D23CAB31EB23C0F0094F875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D23CAB11EB23C0F0094F875 /* LaunchScreen.storyboard */; };
 		3D23CABC1EB2400B0094F875 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23CABB1EB2400B0094F875 /* Config.swift */; };
 		3D23CABE1EB241410094F875 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23CABD1EB241410094F875 /* Utils.swift */; };
+		3DF4BB5E1EB26E9D00E81D5B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4BB5D1EB26E9D00E81D5B /* State.swift */; };
+		3DF4BB601EB26F2100E81D5B /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4BB5F1EB26F2000E81D5B /* Ticker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,9 @@
 		3D23CAB41EB23C0F0094F875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D23CABA1EB23F160094F875 /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ToDo.txt; path = Altcoins/ToDo.txt; sourceTree = "<group>"; };
 		3D23CABB1EB2400B0094F875 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		3D23CABD1EB241410094F875 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3D23CABD1EB241410094F875 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		3DF4BB5D1EB26E9D00E81D5B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		3DF4BB5F1EB26F2000E81D5B /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				3D23CAB41EB23C0F0094F875 /* Info.plist */,
-				3D23CABB1EB2400B0094F875 /* Config.swift */,
-				3D23CABD1EB241410094F875 /* Utils.swift */,
 				3D23CAA81EB23C0F0094F875 /* AppDelegate.swift */,
+				3D23CABB1EB2400B0094F875 /* Config.swift */,
+				3DF4BB5D1EB26E9D00E81D5B /* State.swift */,
+				3DF4BB5F1EB26F2000E81D5B /* Ticker.swift */,
+				3D23CABD1EB241410094F875 /* Utils.swift */,
 				3D23CAAA1EB23C0F0094F875 /* ViewController.swift */,
 				3D23CAAC1EB23C0F0094F875 /* Main.storyboard */,
 				3D23CAB11EB23C0F0094F875 /* LaunchScreen.storyboard */,
@@ -146,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D23CAAB1EB23C0F0094F875 /* ViewController.swift in Sources */,
+				3DF4BB601EB26F2100E81D5B /* Ticker.swift in Sources */,
 				3D23CAA91EB23C0F0094F875 /* AppDelegate.swift in Sources */,
 				3D23CABC1EB2400B0094F875 /* Config.swift in Sources */,
+				3DF4BB5E1EB26E9D00E81D5B /* State.swift in Sources */,
 				3D23CABE1EB241410094F875 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +320,7 @@
 				3D23CAB91EB23C0F0094F875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,4 +22,10 @@ class Config {
         UserDefaults.standard.set(lastUpdate.timeIntervalSince1970, forKey: "lastUpdate")
         UserDefaults.standard.set(watchedCoins, forKey: "watchedCoins")
     }
+    
+    // On API refresh call this method
+    func saveLastUpdate() {
+        lastUpdate = Date()
+        UserDefaults.standard.set(lastUpdate.timeIntervalSince1970, forKey: "lastUpdate")
+    }
 }
