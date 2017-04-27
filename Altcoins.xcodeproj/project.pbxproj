@@ -12,16 +12,21 @@
 		3D23CAAE1EB23C0F0094F875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D23CAAC1EB23C0F0094F875 /* Main.storyboard */; };
 		3D23CAB01EB23C0F0094F875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D23CAAF1EB23C0F0094F875 /* Assets.xcassets */; };
 		3D23CAB31EB23C0F0094F875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D23CAB11EB23C0F0094F875 /* LaunchScreen.storyboard */; };
+		3D23CABC1EB2400B0094F875 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23CABB1EB2400B0094F875 /* Config.swift */; };
+		3D23CABE1EB241410094F875 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23CABD1EB241410094F875 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D23CAA51EB23C0F0094F875 /* Altcoins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altcoins.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D23CAA81EB23C0F0094F875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D23CAA81EB23C0F0094F875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3D23CAAA1EB23C0F0094F875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D23CAAD1EB23C0F0094F875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D23CAAF1EB23C0F0094F875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D23CAB21EB23C0F0094F875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D23CAB41EB23C0F0094F875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D23CABA1EB23F160094F875 /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ToDo.txt; path = Altcoins/ToDo.txt; sourceTree = "<group>"; };
+		3D23CABB1EB2400B0094F875 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3D23CABD1EB241410094F875 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 		3D23CA9C1EB23C090094F875 = {
 			isa = PBXGroup;
 			children = (
+				3D23CABA1EB23F160094F875 /* ToDo.txt */,
 				3D23CAA71EB23C0F0094F875 /* Altcoins */,
 				3D23CAA61EB23C0F0094F875 /* Products */,
 			);
@@ -54,12 +60,14 @@
 		3D23CAA71EB23C0F0094F875 /* Altcoins */ = {
 			isa = PBXGroup;
 			children = (
+				3D23CAB41EB23C0F0094F875 /* Info.plist */,
+				3D23CABB1EB2400B0094F875 /* Config.swift */,
+				3D23CABD1EB241410094F875 /* Utils.swift */,
 				3D23CAA81EB23C0F0094F875 /* AppDelegate.swift */,
 				3D23CAAA1EB23C0F0094F875 /* ViewController.swift */,
 				3D23CAAC1EB23C0F0094F875 /* Main.storyboard */,
-				3D23CAAF1EB23C0F0094F875 /* Assets.xcassets */,
 				3D23CAB11EB23C0F0094F875 /* LaunchScreen.storyboard */,
-				3D23CAB41EB23C0F0094F875 /* Info.plist */,
+				3D23CAAF1EB23C0F0094F875 /* Assets.xcassets */,
 			);
 			path = Altcoins;
 			sourceTree = "<group>";
@@ -139,6 +147,8 @@
 			files = (
 				3D23CAAB1EB23C0F0094F875 /* ViewController.swift in Sources */,
 				3D23CAA91EB23C0F0094F875 /* AppDelegate.swift in Sources */,
+				3D23CABC1EB2400B0094F875 /* Config.swift in Sources */,
+				3D23CABE1EB241410094F875 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5F3M8Z38CD;
 				INFOPLIST_FILE = Altcoins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Armonia.Altcoins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5F3M8Z38CD;
 				INFOPLIST_FILE = Altcoins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Armonia.Altcoins;
 				PRODUCT_NAME = "$(TARGET_NAME)";

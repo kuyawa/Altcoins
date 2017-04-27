@@ -1,0 +1,11 @@
+TODO:
+
+- Main screen: Watched coins, up to ten
+- List tickers: Allow to watch, charts, etc
+- Appicon
+
+
+
+DONE:
+
+-
