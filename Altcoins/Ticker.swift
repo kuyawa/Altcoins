@@ -39,6 +39,59 @@ class Ticker {
             print(coin.text2)
         }
     }
+    
+    // ALTEX 100 - Altcoins market index
+    func altex100() -> Int {
+        func f(_ num: Double) -> String { return String(format: "%20.4f", num) }
+        func s(_ sym: String) -> String { return String(format: "%5@", sym) }
+        
+        let N = 100
+        var totalUsd = 0.0
+        var totalVol = 0.0
+        var totalMkt = 0.0
+        
+        var i = 0
+        for item in coins {
+            totalUsd += item.priceUsd
+            totalVol += item.volumeUsd
+            totalMkt += item.marketUsd
+            i += 1
+            if i > N { break }
+        }
+        
+        var altex = 0.0
+        
+        i = 0
+        for item in coins {
+            let sym = item.symbol
+            let usd = item.priceUsd
+            let vol = item.volumeUsd
+            let mkt = item.marketUsd
+            let idx = mkt / usd
+            let vmk = vol * 100 / mkt
+            let pmk = mkt * 100 / totalMkt
+            let fct = totalMkt / 1000000000
+            
+            // Altex
+            // alt = mkt/vol * mkt*100/tmkt
+            let alt = vmk * pmk * fct
+            altex += alt
+            
+            print(s(sym), f(usd), f(vol), f(mkt), f(idx), f(pmk), f(alt))
+            
+            i += 1
+            if i > N { break }
+        }
+        
+        print("---")
+        print("USD: ", totalUsd)
+        print("VOL: ", totalVol)
+        print("MKT: ", totalMkt)
+        print("ALTEX+100: ", Int(altex))
+        print("OK")
+        
+        return Int(altex)
+    }
 }
 
 class Coin {
