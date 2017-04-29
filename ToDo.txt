@@ -1,11 +1,11 @@
 TODO:
 
 - Appicon
-- Launchscreen: huge bitcoin logo
 - Save latest options: coins, index, change
 - Trend icons: up, dn, same
 - Format for millions: 123M
-- Calculate ALTEX 100 market index
+x Launchscreen: huge bitcoin logo
+x Calculate ALTEX 100 market index
   Summ 100 (market caps / price) / 100
   Summ 100 (price / 100)
 

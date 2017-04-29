@@ -59,6 +59,34 @@ extension Date {
     static func epoch(_ time: Int) -> Date {
         return Date(timeIntervalSince1970: TimeInterval(time))
     }
+    
+    // APR 25, 8:35 AM
+    func short() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, hh:mm a"
+        let text = formatter.string(from: self).uppercased()
+        return text
+    }
+}
+
+extension Optional {
+    var string: String {
+        get {
+            return self as? String ?? ""
+        }
+    }
+    
+    var int: Int {
+        get {
+            return Int(self as? String ?? "0") ?? 0
+        }
+    }
+    
+    var double: Double {
+        get {
+            return Double(self as? String ?? "0.0") ?? 0.0
+        }
+    }
 }
 
 

@@ -9,10 +9,11 @@
 import Foundation
 
 struct Options {
-    var coins = 0  // top10, top100, all
-    var index = 0  // usd, btc, vol, mkt
-    var trend = 0  // 1hr, 24hr, 7d
-    var order = 0  // asc, desc
+    var coins = 0  // TOP10, TOP100, ALL
+    var order = 0  // SYMBOL, NAME, VALUE
+    var index = 0  // PRICE, VOLUME, MARKET, TREND
+    var trend = 0  // 1HR, 24HR, 7D
+    var money = 0  // BTC, USD, EUR, YEN, YUAN
 }
 
 class Config {

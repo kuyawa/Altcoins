@@ -18,12 +18,22 @@ class Ticker {
         
         for item in list {
             let coin = Coin()
-            coin.id       = (item["id"]        as? String) ?? ""
-            coin.name     = (item["name"]      as? String) ?? ""
-            coin.symbol   = (item["symbol"]    as? String) ?? ""
-            coin.rank     = (item["rank"]      as? Int)    ?? 0
-            coin.priceUsd = Double((item["price_usd"] as? String) ?? "0.0") ?? 0.0
-            coin.priceBtc = Double((item["price_btc"] as? String) ?? "0.0") ?? 0.0
+            coin.id          = item["id"].string
+            coin.name        = item["name"].string
+            coin.symbol      = item["symbol"].string
+            coin.rank        = item["rank"].int
+            coin.priceUsd    = item["price_usd"].double
+            coin.priceBtc    = item["price_btc"].double
+            coin.volumeUsd   = Double((item["24h_volume_usd"]     as? String) ?? "0.0") ?? 0.0
+            coin.marketUsd   = Double((item["market_cap_usd"]     as? String) ?? "0.0") ?? 0.0
+            coin.available   = Double((item["available_supply"]   as? String) ?? "0.0") ?? 0.0
+            coin.totalSupply = Double((item["total_supply"]       as? String) ?? "0.0") ?? 0.0
+            coin.totalSupply = Double((item["total_supply"]       as? String) ?? "0.0") ?? 0.0
+            coin.change01h   = Double((item["percent_change_1h"]  as? String) ?? "0.0") ?? 0.0
+            coin.change24h   = Double((item["percent_change_24h"] as? String) ?? "0.0") ?? 0.0
+            coin.change24h   = Double((item["percent_change_7d"]  as? String) ?? "0.0") ?? 0.0
+            coin.trend       = (coin.change01h == 0 ? 0 : (coin.change01h > 0 ? 1 : 2))
+            coin.updated     = Int((item["last_updated"] as? String) ?? "0") ?? 0
             coins.append(coin)
         }
     }

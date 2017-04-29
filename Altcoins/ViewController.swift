@@ -15,7 +15,9 @@ class ViewController: UIViewController {
 
     var tableController = TableController()
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var textAltex   : UILabel!
+    @IBOutlet weak var textUpdated : UILabel!
+    @IBOutlet weak var tableView   : UITableView!
     
     @IBAction func onOptionsMenu(_ sender: UIButton) {
         print("Show options")
@@ -62,6 +64,17 @@ class ViewController: UIViewController {
         tableController.options = state.options
         tableController.refresh()
         tableView.reloadData()
+        calcAltexIndex()
+        showUpdated()
+    }
+    
+    func calcAltexIndex() {
+        let altex = state.ticker.altex100()
+        textAltex.text = "ALTEX INDEX \(altex)"
+    }
+    
+    func showUpdated() {
+        textUpdated.text = "UPDATED ON \(state.updated.short())"
     }
 
 }
