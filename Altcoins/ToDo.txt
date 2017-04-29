@@ -1,15 +1,25 @@
 TODO:
 
-- Main screen: Watched coins, up to ten
-- List tickers: Allow to watch, charts, etc
 - Appicon
-
+- Launchscreen: huge bitcoin logo
+- Save latest options: coins, index, change
+- Trend icons: up, dn, same
+- Format for millions: 123M
 
 
 DONE:
 
--
+x Options as popup
+x Ticker and Coin classes
+x State
+x Config
+x Initial setup
 
+
+
+VERSION 2
+- Main screen: Watched coins, up to ten
+- List tickers: Allow to watch, charts, etc
 
 
 ----
@@ -47,7 +57,7 @@ check every hour
 ]
 
 Coins  [ TOP 10  |  TOP 100 |   ALL   ]
-Index  [  USD  |  BTC  |  VOL  |  MKT  ]
+Index  [  USD  |  BTC  |  VOL  |  MKT  | TREND ]
 Change [ 1 hour  | 24 hours |  7 days  ]
 
 BTC   Bitcoin                    1316.7500

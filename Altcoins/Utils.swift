@@ -6,6 +6,7 @@
 //  Copyright © 2017 Armonia. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 
@@ -57,6 +58,21 @@ extension Double {
 extension Date {
     static func epoch(_ time: Int) -> Date {
         return Date(timeIntervalSince1970: TimeInterval(time))
+    }
+}
+
+
+// ALERT
+extension UIViewController {
+    func alert(_ text: String) {
+        alert(message: text)
+    }
+    
+    func alert(message: String, title: String = "Alert") {
+        let alert  = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
 }
 

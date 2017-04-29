@@ -55,6 +55,7 @@ class Coin {
     var change01h   = 0.0
     var change24h   = 0.0
     var change07d   = 0.0
+    var trend       = 0    // 0:same 1:up 2: down
     var updated     = 0
     
     var text:  String { get { return String(format: "%5@ %25@ %10.04f", symbol.pad(5), name.pad(25), priceUsd) } }

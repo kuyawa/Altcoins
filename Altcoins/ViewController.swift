@@ -9,9 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var config = Config()
+    var state  = State()
 
+    var tableController = TableController()
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func onOptionsMenu(_ sender: UIButton) {
+        print("Show options")
+        let optionsController = OptionsController()
+        optionsController.options = state.options
+        optionsController.returnAction = returnAction
+        self.present(optionsController, animated: true, completion: nil)
+    }
+    
+    func returnAction(options: Options) {
+        print("Options selected: ", options)
+        state.options = options
+
+        //saveoptions
+        showTicker()
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "tableCell")
+        tableView.delegate   = tableController
+        tableView.dataSource = tableController
         start()
     }
 
@@ -20,8 +48,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    // RUN
+    
     func start() {
         print("Hello")
+        config.load()
+        state.start(onReady: showTicker)
+    }
+    
+    func showTicker() {
+        tableController.ticker  = state.ticker
+        tableController.options = state.options
+        tableController.refresh()
+        tableView.reloadData()
     }
 
 }

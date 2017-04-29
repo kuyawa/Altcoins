@@ -8,11 +8,14 @@
 
 import Foundation
 
+typealias Callback = () -> Void
+
 class State {
     
-    var ticker = Ticker()
+    var ticker  = Ticker()
+    var options = Options()
     
-    func start() {
+    func start(onReady: @escaping Callback) {
         let api = "https://api.coinmarketcap.com/v1/ticker/?limit=100"
         let url = URL(string: api)
         
@@ -28,6 +31,7 @@ class State {
                 self.ticker = Ticker(json: text)
                 self.ticker.show()
                 //self.ticker.show2()
+                DispatchQueue.main.async { onReady() }
             } else {
                 print("Error parsing JSON")
                 print(error)

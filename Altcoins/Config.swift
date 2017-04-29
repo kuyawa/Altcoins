@@ -8,6 +8,13 @@
 
 import Foundation
 
+struct Options {
+    var coins = 0  // top10, top100, all
+    var index = 0  // usd, btc, vol, mkt
+    var trend = 0  // 1hr, 24hr, 7d
+    var order = 0  // asc, desc
+}
+
 class Config {
     var lastUpdate   = Date()
     var defaultCoins = "BTC, LTC, MNR, ETH, DSH"
