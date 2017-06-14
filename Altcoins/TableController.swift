@@ -38,6 +38,16 @@ class TableController: NSObject, UITableViewDelegate, UITableViewDataSource {
         cell.textName.text   = coin.name
         cell.textIndex.text  = coin.priceUsd.format(10,4)
         
+        if coin.change01h < 0 {
+            cell.textIndex.textColor = UIColor.red
+        } else {
+            cell.textIndex.textColor = UIColor.green
+        }
+        
+        let bgView = UIView()
+        bgView.backgroundColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0)
+        cell.selectedBackgroundView = bgView
+        
         return cell
     }
 }

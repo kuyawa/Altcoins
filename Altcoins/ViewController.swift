@@ -19,26 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var textUpdated : UILabel!
     @IBOutlet weak var tableView   : UITableView!
     
-    @IBAction func onOptionsMenu(_ sender: UIButton) {
-        print("Show options")
-        let optionsController = OptionsController()
-        optionsController.options = state.options
-        optionsController.returnAction = returnAction
-        self.present(optionsController, animated: true, completion: nil)
-    }
-    
-    func returnAction(options: Options) {
-        print("Options selected: ", options)
-        state.options = options
-
-        //saveoptions
-        showTicker()
-    }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.backgroundColor = UIColor.black
         tableView.register(nib, forCellReuseIdentifier: "tableCell")
         tableView.delegate   = tableController
         tableView.dataSource = tableController
@@ -70,7 +54,7 @@ class ViewController: UIViewController {
     
     func calcAltexIndex() {
         let altex = state.ticker.altex100()
-        textAltex.text = "ALTEX INDEX \(altex)"
+        textAltex.text = "ALTEX \(altex)"
     }
     
     func showUpdated() {

@@ -23,7 +23,7 @@ class State {
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             if error != nil {
                 print("Error fetching API")
-                print(error)
+                print(error ?? "?")
                 return
             }
             
@@ -36,7 +36,7 @@ class State {
                 DispatchQueue.main.async { onReady() }
             } else {
                 print("Error parsing JSON")
-                print(error)
+                print(error ?? "?")
             }
         }
         

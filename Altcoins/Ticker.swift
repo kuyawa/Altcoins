@@ -15,6 +15,7 @@ class Ticker {
     convenience init(json: String) {
         self.init()
         let list = json.parseList()
+        var data = [Coin]()
         
         for item in list {
             let coin = Coin()
@@ -34,6 +35,18 @@ class Ticker {
             coin.change24h   = Double((item["percent_change_7d"]  as? String) ?? "0.0") ?? 0.0
             coin.trend       = (coin.change01h == 0 ? 0 : (coin.change01h > 0 ? 1 : 2))
             coin.updated     = Int((item["last_updated"] as? String) ?? "0") ?? 0
+            //coins.append(coin)
+            data.append(coin)
+        }
+        
+        // First ten coins
+        for index in 0 ..< 10 {
+            coins.append(data[index])
+        }
+        
+        // Then sorted by symbol
+        let sorted = data.sorted { $0.symbol < $1.symbol }
+        for coin in sorted {
             coins.append(coin)
         }
     }
@@ -62,10 +75,11 @@ class Ticker {
         
         var i = 0
         for item in coins {
+            i += 1
+            if i < 11 { continue }  // top 10 coins are repeated in list
             totalUsd += item.priceUsd
             totalVol += item.volumeUsd
             totalMkt += item.marketUsd
-            i += 1
             if i > N { break }
         }
         
@@ -73,6 +87,8 @@ class Ticker {
         
         i = 0
         for item in coins {
+            i += 1
+            if i < 11 { continue }  // top 10 coins are repeated in list
             let sym = item.symbol
             let usd = item.priceUsd
             let vol = item.volumeUsd
@@ -89,7 +105,6 @@ class Ticker {
             
             print(s(sym), f(usd), f(vol), f(mkt), f(idx), f(pmk), f(alt))
             
-            i += 1
             if i > N { break }
         }
         

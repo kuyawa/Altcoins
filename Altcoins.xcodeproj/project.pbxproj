@@ -15,8 +15,6 @@
 		3D23CAB31EB23C0F0094F875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D23CAB11EB23C0F0094F875 /* LaunchScreen.storyboard */; };
 		3D23CABC1EB2400B0094F875 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23CABB1EB2400B0094F875 /* Config.swift */; };
 		3D23CABE1EB241410094F875 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23CABD1EB241410094F875 /* Utils.swift */; };
-		3DD8D9DB1EB3B55C00B7D16B /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D9D91EB3B55C00B7D16B /* OptionsController.swift */; };
-		3DD8D9DC1EB3B55C00B7D16B /* OptionsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD8D9DA1EB3B55C00B7D16B /* OptionsController.xib */; };
 		3DD8D9DE1EB3BB3A00B7D16B /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D9DD1EB3BB3A00B7D16B /* TableController.swift */; };
 		3DD8D9E11EB3BEA200B7D16B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D9DF1EB3BEA200B7D16B /* TableViewCell.swift */; };
 		3DD8D9E21EB3BEA200B7D16B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD8D9E01EB3BEA200B7D16B /* TableViewCell.xib */; };
@@ -33,14 +31,12 @@
 		3D23CAAF1EB23C0F0094F875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D23CAB21EB23C0F0094F875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D23CAB41EB23C0F0094F875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D23CABB1EB2400B0094F875 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3D23CABB1EB2400B0094F875 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3D23CABD1EB241410094F875 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		3DD8D9D91EB3B55C00B7D16B /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
-		3DD8D9DA1EB3B55C00B7D16B /* OptionsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsController.xib; sourceTree = "<group>"; };
 		3DD8D9DD1EB3BB3A00B7D16B /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		3DD8D9DF1EB3BEA200B7D16B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3DD8D9DF1EB3BEA200B7D16B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3DD8D9E01EB3BEA200B7D16B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		3DF4BB5D1EB26E9D00E81D5B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		3DF4BB5D1EB26E9D00E81D5B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3DF4BB5F1EB26F2000E81D5B /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
@@ -84,8 +80,6 @@
 				3DD8D9DD1EB3BB3A00B7D16B /* TableController.swift */,
 				3DD8D9DF1EB3BEA200B7D16B /* TableViewCell.swift */,
 				3DD8D9E01EB3BEA200B7D16B /* TableViewCell.xib */,
-				3DD8D9D91EB3B55C00B7D16B /* OptionsController.swift */,
-				3DD8D9DA1EB3B55C00B7D16B /* OptionsController.xib */,
 				3D23CAAA1EB23C0F0094F875 /* ViewController.swift */,
 				3D23CAAC1EB23C0F0094F875 /* Main.storyboard */,
 				3D23CAB11EB23C0F0094F875 /* LaunchScreen.storyboard */,
@@ -121,12 +115,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Armonia;
 				TargetAttributes = {
 					3D23CAA41EB23C090094F875 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5F3M8Z38CD;
+						DevelopmentTeam = W7PMV9XFGM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -158,7 +152,6 @@
 				3DD8D9E21EB3BEA200B7D16B /* TableViewCell.xib in Resources */,
 				3D05EB931EB51E2D00A02112 /* ToDo.txt in Resources */,
 				3D23CAB01EB23C0F0094F875 /* Assets.xcassets in Resources */,
-				3DD8D9DC1EB3B55C00B7D16B /* OptionsController.xib in Resources */,
 				3D23CAAE1EB23C0F0094F875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +169,6 @@
 				3DD8D9E11EB3BEA200B7D16B /* TableViewCell.swift in Sources */,
 				3D23CABC1EB2400B0094F875 /* Config.swift in Sources */,
 				3DD8D9DE1EB3BB3A00B7D16B /* TableController.swift in Sources */,
-				3DD8D9DB1EB3B55C00B7D16B /* OptionsController.swift in Sources */,
 				3DF4BB5E1EB26E9D00E81D5B /* State.swift in Sources */,
 				3D23CABE1EB241410094F875 /* Utils.swift in Sources */,
 			);
@@ -222,6 +214,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,6 +264,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -299,7 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5F3M8Z38CD;
+				DEVELOPMENT_TEAM = W7PMV9XFGM;
 				INFOPLIST_FILE = Altcoins/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -313,7 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5F3M8Z38CD;
+				DEVELOPMENT_TEAM = W7PMV9XFGM;
 				INFOPLIST_FILE = Altcoins/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
