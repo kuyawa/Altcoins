@@ -11,7 +11,6 @@ x Calculate ALTEX 100 market index
 
 DONE:
 
-x Options as popup
 x Ticker and Coin classes
 x State
 x Config
