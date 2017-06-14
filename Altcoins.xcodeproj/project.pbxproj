@@ -38,6 +38,7 @@
 		3DD8D9E01EB3BEA200B7D16B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3DF4BB5D1EB26E9D00E81D5B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3DF4BB5F1EB26F2000E81D5B /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		F42B8E711EF0D2B600509727 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		3D23CA9C1EB23C090094F875 = {
 			isa = PBXGroup;
 			children = (
+				F42B8E711EF0D2B600509727 /* Readme.md */,
 				3D05EB921EB51E2D00A02112 /* ToDo.txt */,
 				3D23CAA71EB23C0F0094F875 /* Altcoins */,
 				3D23CAA61EB23C0F0094F875 /* Products */,
